@@ -1,0 +1,60 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px #ff0044;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ff0044, #ff8c00);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background: linear-gradient(90deg, #ff0044, #ff8c00);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff8c00, #ff0044);
+}
