@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Proxy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Elite Gamez Proxy</h1>
+    <p>Enter a URL...:</p>
+    <form id="proxy-form">
+      <input type="url" id="url-input" placeholder="https://example.com" required />
+      <button type="submit">Go</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('proxy-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const input = document.getElementById('url-input').value;
+      if (!input.startsWith('http')) {
+        alert('Please enter a valid URL with http:// or https://');
+        return;
+      }
+      window.location.href = `/proxy/${input}`;
+    });
+  </script>
+</body>
+</html>
